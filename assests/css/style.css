@@ -1,0 +1,293 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header
+{
+    width: 100%;
+    height: 100vh;
+}
+ nav
+{
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    background-color:#545252;
+    z-index: 99;
+}
+nav ul
+{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+nav ul li
+{
+    list-style: none;
+    color: white;
+}
+.hero
+{
+    background: url("../imeags/building\ 5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.hero p
+{
+    position: absolute;
+    color: #dff2fb;
+    font-size: 26px;
+    font-weight: 00;
+    background-color: #7b8d9693;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about
+{
+  width: 100%;
+   height: 350px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   line-height: 50px;
+   background-color: #f2f9fb;
+
+}
+.about h2
+{
+font-size: 40px;
+}
+.services,
+.teachers
+
+{
+    background-color:#fdd5be ;
+    width: 100%;
+    height: 400px; 
+    flex-wrap: wrap; 
+    gap: 10px;  
+}
+.services h2,
+.specializations h2,
+.teachers h2
+{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 80px;
+    padding-bottom:50px ;  
+}
+.services .card,
+.specializations .card,
+.teachers .card
+{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.specializations
+{
+    background-color:#f1f9fc ;
+    width: 100%;
+    height: 350px;
+}
+.card p{
+    line-height: 20px;
+    text-align:center ;
+ 
+}
+.card h3
+{
+    padding-bottom: 20px;
+  
+}
+#h3
+{
+    text-align: center;
+    padding-top: 20px;
+}
+.card img
+{
+    width: 120px;
+    height: 80px;
+}
+.item
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.card-1
+{
+    background-color:#f4d39c ;
+    width: 230px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;  
+}
+.plans h2
+{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom:40px ;
+      
+}
+.plans .card
+{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card-1 h3
+{
+    margin-top: 12px;
+    text-align: center;
+}
+.card-1 img
+{
+ 
+    width: 200px;
+    height: 100px;
+    margin: 15px auto;
+   
+}
+.card-1 ul 
+{
+   padding-left: 30px; 
+}
+.card-1 div
+{
+ border: 2px solid #d8b90a;
+ background-color: #ecd26d;
+ border-radius: 5px;
+ margin: 10px;
+ 
+}
+.card-1 div p
+{
+    text-align: start;
+    padding-left: 10px;
+}
+.contact
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 350px;
+    width: 100%;
+    background-color:#fdd5be ;
+     height: 500px;
+}
+.contact h2
+{
+    text-align: center;
+    font-size: 40px;  
+    padding-top: 20px;
+    align-items: center;
+}
+.contact form{
+    
+    margin-top: 30px; 
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+ 
+
+}
+input ,textarea
+{
+width: 300px;
+
+}
+button
+{
+    margin-top: 30px;
+    background-color: #545252;
+    color: white;
+    border-radius: 4px;
+    width: 200px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+.contact h2
+{
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+ footer ul
+{
+    width: 100%;
+    height: 30px;
+    background-color: #545252;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; 
+} 
+  footer li
+{
+    list-style: none;
+}
+  footer li a
+{
+    text-decoration: none;
+    color: white;
+}
+@media (max-width:750px)
+{
+    .plans
+    {
+        height: 850px;
+    }
+}
+@media (max-width:680px)
+{
+    .teachers
+   { 
+      height: 900px; 
+   }
+}
+@media (max-width:568px)
+ {
+    .specializations 
+    {
+        height: 600px;
+    }
+    .services
+    {
+        height: 500px;
+    }
+ }
+ @media (max-width:490px)
+ {
+   .plans
+   {
+        height: 900px;
+   }
+ }
+ @media (max-width:400px)
+ {
+    .about p
+    {
+       text-align: center;
+    }
+ }
